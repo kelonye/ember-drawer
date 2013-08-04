@@ -1,0 +1,39 @@
+.component.drawer{
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 500px;
+  padding-top: 50px;
+  background-color: #fff;
+  box-shadow: 0 1px 5px 3px rgba(42, 43, 36, 0.06), 0 1px 1px rgba(42, 43, 36, 0.06);
+}
+
+.component.drawer.left{
+  left: -540px;
+  padding-right: 40px;
+  transition: left .25s ease;
+}
+
+.component.drawer.right{
+  right: -540px;
+  padding-left: 40px;
+  text-align: left !important
+  transition: right .25s ease
+}
+
+.component.drawer .x{
+  position: absolute;
+  right: 20px;
+  top: 5px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.component.drawer.left .x{
+  right: 20px;
+}
+
+.component.drawer.right .x{
+  left: 20px;
+}

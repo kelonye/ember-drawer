@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href='../public/public.css' rel='stylesheet' media='screen'
+  </head>
+  <body>
+    <script type='text/x-handlebars' id='index'>
+      <button style='float: left' {{action 'showLeftDrawer'}}>Open left drawer</button>
+      <button style='float: right' {{action 'showRightDrawer'}}>Open right drawer</button>
+      <div class="component drawer left">
+        <span class='x' {{action 'hideLeftDrawer'}}>✘</span>
+      </div>
+      <div class="component drawer right">
+        <span class='x' {{action 'hideRightDrawer'}}>✘</span>
+      </div>
+    </script>
+    <script src='../public/public.js'></script>
+    <script type='text/javascript'>
+      var mixin = require('ember-drawer');
+      App = Em.Application.create();
+      App.IndexController = Em.Controller.extend(mixin);
+    </script>
+  </body>
+</html>
