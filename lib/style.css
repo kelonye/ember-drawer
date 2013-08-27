@@ -3,6 +3,7 @@
   position: fixed;
   top: 0;
   bottom: 0;
+  width: 500px;
   padding-top: 50px;
   background-color: #fff;
   box-shadow: 0 1px 5px 3px rgba(42, 43, 36, 0.06), 0 1px 1px rgba(42, 43, 36, 0.06);
@@ -10,18 +11,19 @@
 
 .component.drawer.left{
   padding-right: 40px;
+  left: -540px;
   transition: left .25s ease;
 }
 
 .component.drawer.right{
   padding-left: 40px;
+  right: -540px;
   text-align: left !important;
   transition: right .25s ease
 }
 
 .component.drawer .x{
   position: absolute;
-  right: 20px;
   top: 5px;
   font-size: 20px;
   cursor: pointer;

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href='../public/public.css' rel='stylesheet' media='screen'
+    <link href='../public/public.css' rel='stylesheet' media='screen'>
   </head>
   <body>
     <script type='text/x-handlebars' id='index'>
@@ -18,18 +18,7 @@
     <script type='text/javascript'>
       var mixin = require('ember-drawer');
       App = Em.Application.create();
-      App.IndexController = Em.Controller.extend(mixin, {
-        left: -540,
-        right: -540
-      });
-      App.IndexView = Em.View.extend({
-        didInsertElement: function(){
-          this._super();
-          controller = this.get('controller');
-          controller.hideLeftDrawer();
-          controller.hideRightDrawer();
-        }
-      });
+      App.IndexController = Em.Controller.extend(mixin);
     </script>
   </body>
 </html>
