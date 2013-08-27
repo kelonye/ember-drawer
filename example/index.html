@@ -18,7 +18,18 @@
     <script type='text/javascript'>
       var mixin = require('ember-drawer');
       App = Em.Application.create();
-      App.IndexController = Em.Controller.extend(mixin);
+      App.IndexController = Em.Controller.extend(mixin, {
+        left: -540,
+        right: -540
+      });
+      App.IndexView = Em.View.extend({
+        didInsertElement: function(){
+          this._super();
+          controller = this.get('controller');
+          controller.hideLeftDrawer();
+          controller.hideRightDrawer();
+        }
+      });
     </script>
   </body>
 </html>
