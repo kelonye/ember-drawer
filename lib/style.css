@@ -1,12 +1,16 @@
 .component.drawer{
   z-index: 1000;
   position: fixed;
-  top: 0;
-  bottom: 0;
-  width: 500px;
   padding-top: 50px;
   background-color: #fff;
   box-shadow: 0 1px 5px 3px rgba(42, 43, 36, 0.06), 0 1px 1px rgba(42, 43, 36, 0.06);
+}
+
+.component.drawer.left,
+.component.drawer.right{
+  top: 0;
+  bottom: 0;
+  width: 500px;
 }
 
 .component.drawer.left{
@@ -29,10 +33,30 @@
   cursor: pointer;
 }
 
+.component.drawer.top .x,
+.component.drawer.bottom .x,
 .component.drawer.left .x{
   right: 20px;
 }
 
 .component.drawer.right .x{
   left: 20px;
+}
+
+
+.component.drawer.top,
+.component.drawer.bottom{
+  left: 0;
+  right: 0;
+  height: 200px;
+}
+
+.component.drawer.top{
+  top: -540px;
+  transition: top .25s ease;
+}
+
+.component.drawer.bottom{
+  bottom: -540px;
+  transition: bottom .25s ease
 }

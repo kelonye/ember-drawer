@@ -5,13 +5,23 @@
   </head>
   <body>
     <script type='text/x-handlebars' id='index'>
-      <button style='float: left' {{action 'showLeftDrawer'}}>Open left drawer</button>
-      <button style='float: right' {{action 'showRightDrawer'}}>Open right drawer</button>
-      <div class="component drawer left">
-        <span class='x' {{action 'hideLeftDrawer'}}>✘</span>
+      <div style='text-align: center;'>
+        <button {{action 'showTopDrawer'}}>Open top drawer</button>
+        <button {{action 'showRightDrawer'}}>Open right drawer</button>
+        <button {{action 'showBottomDrawer'}}>Open bottom drawer</button>
+        <button {{action 'showLeftDrawer'}}>Open left drawer</button>
+      </div>
+      <div class="component drawer top">
+        <span class='x' {{action 'hideTopDrawer'}}>✘</span>
       </div>
       <div class="component drawer right">
         <span class='x' {{action 'hideRightDrawer'}}>✘</span>
+      </div>
+      <div class="component drawer bottom">
+        <span class='x' {{action 'hideBottomDrawer'}}>✘</span>
+      </div>
+      <div class="component drawer left">
+        <span class='x' {{action 'hideLeftDrawer'}}>✘</span>
       </div>
     </script>
     <script src='../public/public.js'></script>
