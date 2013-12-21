@@ -1,4 +1,4 @@
-.component.drawer{
+.component-drawer{
   z-index: 1000;
   position: fixed;
   padding-top: 50px;
@@ -7,57 +7,62 @@
   box-shadow: 0 1px 5px 3px rgba(42, 43, 36, 0.06), 0 1px 1px rgba(42, 43, 36, 0.06);
 }
 
-.component.drawer.left,
-.component.drawer.right{
+.component-drawer,
+.component-drawer-center{
+  transition: all 0.3s ease-out;
+}
+
+.component-drawer-left,
+.component-drawer-right{
   top: 0;
   bottom: 0;
   width: 500px;
 }
 
-.component.drawer.left{
+.component-drawer-left{
   padding-right: 40px;
   left: -540px;
   transition: left .25s ease;
 }
 
-.component.drawer.right{
+.component-drawer-right{
   padding-left: 40px;
   right: -540px;
   text-align: left !important;
   transition: right .25s ease
 }
 
-.component.drawer .x{
+.component-drawer .x{
   position: absolute;
   top: 5px;
   font-size: 20px;
   cursor: pointer;
 }
 
-.component.drawer.top .x,
-.component.drawer.bottom .x,
-.component.drawer.left .x{
+.component-drawer-top .x,
+.component-drawer-bottom .x,
+.component-drawer-left .x{
   right: 20px;
 }
 
-.component.drawer.right .x{
+.component-drawer-right .x{
   left: 20px;
 }
 
 
-.component.drawer.top,
-.component.drawer.bottom{
+.component-drawer-top,
+.component-drawer-bottom{
   left: 0;
   right: 0;
   height: 200px;
 }
 
-.component.drawer.top{
+.component-drawer-top{
   top: -540px;
   transition: top .25s ease;
 }
 
-.component.drawer.bottom{
+.component-drawer-bottom{
   bottom: -540px;
   transition: bottom .25s ease
 }
