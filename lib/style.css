@@ -22,14 +22,12 @@
 .component-drawer-left{
   padding-right: 40px;
   left: -540px;
-  transition: left .25s ease;
 }
 
 .component-drawer-right{
   padding-left: 40px;
   right: -540px;
   text-align: left !important;
-  transition: right .25s ease
 }
 
 .component-drawer .x{
@@ -59,10 +57,8 @@
 
 .component-drawer-top{
   top: -540px;
-  transition: top .25s ease;
 }
 
 .component-drawer-bottom{
   bottom: -540px;
-  transition: bottom .25s ease
 }
