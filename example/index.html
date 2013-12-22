@@ -11,22 +11,22 @@
   <body>
     <script type='text/x-handlebars' id='index'>
       <div class='component-drawer-center'>
-        <button {{action 'showTopDrawer'}}>Open top drawer</button>
-        <button {{action 'showRightDrawer'}}>Open right drawer</button>
-        <button {{action 'showBottomDrawer'}}>Open bottom drawer</button>
-        <button {{action 'showLeftDrawer'}}>Open left drawer</button>
+      <button {{action 'toggleTopDrawer'}}>Toggle top drawer</button>
+      <button {{action 'toggleRightDrawer'}}>Toggle right drawer</button>
+      <button {{action 'toggleBottomDrawer'}}>Toggle bottom drawer</button>
+      <button {{action 'toggleLeftDrawer'}}>Toggle left drawer</button>
       </div>
       <div class="component-drawer component-drawer-top">
-        <span class='x' {{action 'hideTopDrawer'}}>✘</span>
+        <span class='x' {{action 'toggleTopDrawer'}}>✘</span>
       </div>
       <div class="component-drawer component-drawer-right">
-        <span class='x' {{action 'hideRightDrawer'}}>✘</span>
+        <span class='x' {{action 'toggleRightDrawer'}}>✘</span>
       </div>
       <div class="component-drawer component-drawer-bottom">
-        <span class='x' {{action 'hideBottomDrawer'}}>✘</span>
+        <span class='x' {{action 'toggleBottomDrawer'}}>✘</span>
       </div>
       <div class="component-drawer component-drawer-left">
-        <span class='x' {{action 'hideLeftDrawer'}}>✘</span>
+        <span class='x' {{action 'toggleLeftDrawer'}}>✘</span>
       </div>
     </script>
     <script src='../public/public.js'></script>
