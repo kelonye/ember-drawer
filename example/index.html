@@ -11,10 +11,13 @@
   <body>
     <script type='text/x-handlebars' id='index'>
       <div class='component-drawer-center'>
+      <div>
       <button {{action 'toggleTopDrawer'}}>Toggle top drawer</button>
       <button {{action 'toggleRightDrawer'}}>Toggle right drawer</button>
       <button {{action 'toggleBottomDrawer'}}>Toggle bottom drawer</button>
       <button {{action 'toggleLeftDrawer'}}>Toggle left drawer</button>
+      </div>
+      <div>Mobile: {{controller._is_mobile}}</div>
       </div>
       <div class="component-drawer component-drawer-top">
         <span class='x' {{action 'toggleTopDrawer'}}>✘</span>
