@@ -9,7 +9,8 @@ components:
 	@$(component) install
 
 public: lib/index.js lib/style.css
-	@$(component) build -n $@ -o $@
+	$(component) build -n $@ -o $@
+	@touch $@
 
 example: default
 	@xdg-open example/index.html
