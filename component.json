@@ -1,9 +1,9 @@
 {
   "name": "ember-drawer",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "license": "MIT",
   "dependencies": {
-    "kelonye/ember": "1.7.0"
+    "kelonye/ember": "1.9.1"
   },
   "main": "lib/index.js",
   "scripts": [
