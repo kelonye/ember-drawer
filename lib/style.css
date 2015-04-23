@@ -1,7 +1,6 @@
 .component-drawer{
   z-index: 1000;
   position: fixed;
-  padding-top: 50px;
   overflow-y: auto;
   background-color: #fff;
   box-shadow: 0 1px 5px 3px rgba(42, 43, 36, 0.06), 0 1px 1px rgba(42, 43, 36, 0.06);
@@ -56,9 +55,9 @@
 }
 
 .component-drawer-top{
-  top: -540px;
+  top: -240px;
 }
 
 .component-drawer-bottom{
-  bottom: -540px;
+  bottom: -240px;
 }
