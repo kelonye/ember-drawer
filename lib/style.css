@@ -18,6 +18,13 @@
   width: 500px;
 }
 
+/*.component-drawer-left.is-mobile{
+  width: 95% !important;
+}
+.component-drawer-right.is-mobile{
+  width: 95% !important;
+}*/
+
 .component-drawer-left{
   padding-right: 40px;
   left: -540px;
