@@ -3,6 +3,6 @@
   "private": true,
   "license": "MIT",
   "dependencies": {
-    "component-hooks": "0.3.3"
+    "component-hooks": "0.3.4"
   }
 }

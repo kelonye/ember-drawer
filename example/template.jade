@@ -1,0 +1,35 @@
+.component-drawer-center
+  
+  div
+    <button {{action 'toggleTopDrawer'}}>Toggle top drawer</button>
+    <button {{action 'toggleRightDrawer'}}>Toggle right drawer</button>
+    <button {{action 'toggleBottomDrawer'}}>Toggle bottom drawer</button>
+    <button {{action 'toggleLeftDrawer'}}>Toggle left drawer</button>
+
+  <div>Mobile: {{_is_mobile}}</div>
+  <div>Showing top: {{_showingTopDrawer}}</div>
+  <div>Showing right: {{_showingRightDrawer}}</div>
+  <div>Showing bottom: {{_showingBottomDrawer}}</div>
+  <div>Showing left: {{_showingLeftDrawer}}</div>
+
+  div
+    <button {{action 'showTopDrawer'}}>Show top drawer</button>
+    <button {{action 'showRightDrawer'}}>Show right drawer</button>
+    <button {{action 'showBottomDrawer'}}>Show bottom drawer</button>
+    <button {{action 'showLeftDrawer'}}>Show left drawer</button>
+
+.component-drawer.component-drawer-top
+  <span class='x' {{action 'toggleTopDrawer'}}>✘</span>
+  <p>drawer</p>
+
+.component-drawer.component-drawer-right
+  <span class='x' {{action 'toggleRightDrawer'}}>✘</span>
+  <p>drawer</p>
+
+.component-drawer.component-drawer-bottom
+  <span class='x' {{action 'toggleBottomDrawer'}}>✘</span>
+  <p>drawer</p>
+
+.component-drawer.component-drawer-left
+  <span class='x' {{action 'toggleLeftDrawer'}}>✘</span>
+  <p>drawer</p>
