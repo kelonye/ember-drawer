@@ -1,6 +1,6 @@
 var mixin = require('ember-drawer');
 
-Em.TEMPLATES.index = Em.Handlebars.template(eval(require('./template')));
+Em.TEMPLATES.index = Em.HTMLBars.template(require('./template'));
 
 App = Em.Application.create();
 

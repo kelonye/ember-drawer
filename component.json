@@ -3,7 +3,7 @@
   "version": "2.3.0",
   "license": "MIT",
   "dependencies": {
-    "kelonye/ember": "2.3.0"
+    "kelonye/ember": "2.5.0"
   },
   "main": "lib/index.js",
   "scripts": [
