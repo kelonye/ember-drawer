@@ -1,0 +1,21 @@
+{
+  "name": "example",
+  "dependencies": {
+  },
+  "local": [
+    "ember-drawer"
+  ],
+  "paths": [
+    ".",
+    "../../.."
+  ],
+  "scripts": [
+    "index.js"
+  ],
+  "styles": [
+    "style.css"
+  ],
+  "jhbs": [
+    "template"
+  ]
+}
